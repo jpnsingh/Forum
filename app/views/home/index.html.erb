@@ -1,0 +1,36 @@
+<div class="lead well">
+  <h4>The Universe is the totality of everything that exists, has existed, or ever will exist.</h4>
+  <small>This is a Q&A site about anything in the Universe.</small>
+</div>
+
+<div class="container">
+
+  <div class="questions">
+    <% @questions.each do |question| %>
+        <div class="media" data-target="<%= question_path(question) %>">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" src="<%= question.gravatar %>">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading"><%= question.email %> asked:</h4>
+            <div class="time hidden-xs">
+              <small><cite><%= time_ago_in_words question.created_at %> ago</cite></small>
+            </div>
+            <div>
+              <%= truncate question.body, length: 100 %>
+            </div>
+            <div class="answer-btn hidden-xs">
+              <a href="<%= question_path(question) %>" class="btn btn-success btn-xs">View Answers</a>
+            </div>
+          </div>
+        </div>
+    <% end %>
+  </div>
+
+  <% if @questions.empty? %>
+      <div class="alert alert-info">Nothing here yet, be the first one to ask?</div>
+  <% end %>
+
+</div>

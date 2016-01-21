@@ -1,0 +1,37 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.answers, .questions {
+
+  .media {
+    border: thin solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: #eee;
+    position: relative;
+    height: 8em;
+
+    .time {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #666;
+    }
+
+    .answer-btn {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    &:hover {
+      background-color: #ddd;
+      cursor: pointer;
+    }
+  }
+}

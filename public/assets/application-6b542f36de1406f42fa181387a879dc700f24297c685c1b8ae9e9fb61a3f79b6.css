@@ -1,0 +1,47 @@
+/* line 5, D:/emids/Practices/Mine/Ruby/RubyOnRails/Forum/app/assets/stylesheets/home.scss */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* line 11, D:/emids/Practices/Mine/Ruby/RubyOnRails/Forum/app/assets/stylesheets/home.scss */
+.answers .media, .questions .media {
+  border: thin solid #ddd;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: #eee;
+  position: relative;
+}
+/* line 18, D:/emids/Practices/Mine/Ruby/RubyOnRails/Forum/app/assets/stylesheets/home.scss */
+.answers .media .time, .questions .media .time {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #666;
+}
+/* line 25, D:/emids/Practices/Mine/Ruby/RubyOnRails/Forum/app/assets/stylesheets/home.scss */
+.answers .media .answer-btn, .questions .media .answer-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+/* line 31, D:/emids/Practices/Mine/Ruby/RubyOnRails/Forum/app/assets/stylesheets/home.scss */
+.answers .media:hover, .questions .media:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
