@@ -18,6 +18,5 @@
 
 # ignore .idea files
 .idea/*
-.idea/workspace.xml
-.idea/workspace.xml
+.idea
 
