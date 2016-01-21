@@ -16,5 +16,8 @@
 !/log/.keep
 /tmp
 
-# ignore idea files
-/.idea/*
+# ignore .idea files
+.idea/*
+.idea/workspace.xml
+.idea/workspace.xml
+
