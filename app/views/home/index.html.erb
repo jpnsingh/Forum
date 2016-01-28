@@ -10,9 +10,9 @@
     <div data-hello-world></div>
   </div>
 
-  <div class="questions">
+  <div class="questions" data-ng-controller="QuestionController">
     <% @questions.each do |question| %>
-        <div class="media" data-target="<%= question_path(question) %>">
+        <div class="media" data-ng-click="viewAnswers('<%= question_path(question) %>')">
           <div class="media-left">
             <a href="#">
               <img class="media-object" src="<%= question.gravatar %>">
