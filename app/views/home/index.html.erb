@@ -4,12 +4,6 @@
 </div>
 
 <div class="container">
-  <div data-ng-controller="HomeController">
-    <div>{{helloWorldFromCtrl}}</div>
-    <div>{{helloWorldFromService}}</div>
-    <div data-hello-world></div>
-  </div>
-
   <div class="questions" data-ng-controller="QuestionController">
     <% @questions.each do |question| %>
         <div class="media" data-ng-click="viewAnswers('<%= question_path(question) %>')">
