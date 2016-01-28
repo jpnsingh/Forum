@@ -4,6 +4,11 @@
 </div>
 
 <div class="container">
+  <div data-ng-controller="HomeController">
+    <div>{{helloWorldFromCtrl}}</div>
+    <div>{{helloWorldFromService}}</div>
+    <div data-hello-world></div>
+  </div>
 
   <div class="questions">
     <% @questions.each do |question| %>
