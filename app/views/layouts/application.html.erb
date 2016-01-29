@@ -15,11 +15,13 @@
 </head>
 <body data-ng-app="qna-app">
 
-<%= render 'partials/navbar' %>
+  <%= render 'partials/navbar' %>
 
-<%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
 
-<%= render 'partials/new_question_form' %>
+  <%= render 'partials/new_question_form' %>
 
 </body>
 </html>
